@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Overall Body Style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0; /* Light background color for better contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Form Container Style */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px; /* Increased font size */
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px; /* Increased font size */
+        }
+
+        input, select {
+            width: calc(100% - 22px); /* Full width with padding and border in mind */
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px; /* Increased font size for readability */
+        }
+
+        button {
+            display: block; /* Make the button block level */
+            width: auto; /* Adjust width to fit content */
+            margin: 20px auto 0; /* Center the button horizontally */
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px; /* Increased font size */
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            /* Responsive styling */
+            .container {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 16px; /* Adjust font size on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form method="POST" action="{{ url_for('register') }}">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-label="Name">
+            
+            <label for="id_number">ID Number:</label>
+            <input type="text" id="id_number" name="id_number" required aria-label="ID Number">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-label="Email">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required aria-label="Password">
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" aria-label="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" aria-label="Branch">
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" aria-label="Date of Birth">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" aria-label="Phone">
+            
+            <label for="user_type">User Type:</label>
+            <select id="user_type" name="user_type" required aria-label="User Type">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+        <div class="back-link">
+            <a href="{{ url_for('index') }}">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>
