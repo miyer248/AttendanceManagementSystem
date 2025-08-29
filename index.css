@@ -1,0 +1,75 @@
+.first
+{
+    background-color: "rgba(0, 0, 255, 0.1)"
+}
+.second
+{
+    width:"70%";
+    height:"640px";
+    margin-top:"4rem";
+}
+.third
+{
+    margin-top:"4rem";
+}
+.under
+{
+    text-decoration: underline;
+}
+.image1
+{
+    z-index: "20";
+    width:"85%";
+    height:"20%";
+    margin-top:"90px";
+    border-radius:"5% 5% 5% 5%" ;
+}
+.party1
+{
+    width:"70%";
+    height:"43.5rem";
+     border-radius:"1rem 1rem 1rem 1rem";
+}
+.party2
+{
+    width:"500px";
+    height:"440px";
+}
+.form1
+{
+   width:"400px";
+}
+label{
+    color:"white"
+}
+.text1
+{
+    color:"white"
+}
+.text3
+{
+   background-color:"white";
+   border-radius:"5px 5px 5px 5px";
+}
+.container-2
+{
+    background: url(
+        'https://img.freepik.com/free-photo/dreamy-interior-mall_23-2151591375.jpg?t=st=1720600710~exp=1720604310~hmac=3fec381ef4d2941b09b2a9a6234807decc7693766a59196f0c4abc71c4b78a9e&w=1380');
+
+                    border: 0.25rem solid black;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-size: cover;
+                    width: 250px;
+
+                    height: 400px;
+}
+/* 'https://w0.peakpx.com/wallpaper/11/805/HD-wallpaper-magic-pond-tree-water-fantasy-green-digital-lake-forest-luminos-angel-estevez-pond.jpg'); */
+.form-bg
+{
+    background-color: rgba(179, 167, 167, 0.3);
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
+}
+
+
